@@ -1,0 +1,22 @@
+.sidenav {
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #25316D;
+}
+
+.main-bottons {
+    font-size: 22px;
+    color: aqua;
+    text-align: center;
+    line-height: 70px;
+    background-color: cadetblue;
+    user-select: none;
+}
+
+.hidden {
+    color: white;
+    
+}
+
