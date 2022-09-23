@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../admin_siswa/adminsiswa.css">
+    <title>Data Buku</title>
+</head>
+<body>
+
+    <div class="container">
+        <!--Sidebar-->
+        <input type="checkbox" id="check">
+        <label for="check">
+      <i class="fa-bars" id="btn"></i>
+      <i class="fa-times" id="cancel"></i>
+    </label>            
+         <div class="sidebar">
+    <header>e-perpustakaan</header>
+    <ul>
+    <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+    <li><a href="../admin_siswa/datasiswa.php"><i class="fas fa-link"></i>Data Siswa</a></li>
+    <li><a href="../admin_buku/databuku.php"><i class="fas fa-stream"></i>Data Buku</a></li>
+    </ul>
+    </div>
+
+            <!--Content-->
+    <div class="content">
+    <form action="simpan.php" method="post">
+        <p><label>Kode Buku: <input required="required" type="number" name="kode_buku"></label></p>
+        <p><label>Judul Buku : <input required="required" type="text" name="judul_buku"></label></p>
+        <p><label>Penerbit Buku: <input required="required" type="text" name="penerbit_buku"></label></p>
+        <p><label>Tahun Buku : <input required="required" type="number" name="tahun_buku"></label></p>
+        <p><label>Status Buku : <input required="required" type="text" name="status_buku"></label></p>
+        <p><label>Jumlah Buku : <input required="required" type="number" name="jumlah_buku" cols="30" rows="10"></input></label></p>
+        <input type="submit" name="simpan" value="simpan">
+    </form>
+    </div>
+    </div>
+</body>
+</html>

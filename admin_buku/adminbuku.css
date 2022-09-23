@@ -1,0 +1,149 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Lora', serif;
+  background-color: #EEEEEE;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  background: #25316D;
+  transition: all .5s ease;
+}
+
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background:  #5F6F94;
+  user-select: none;
+}
+
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+
+ul li:hover a{
+  padding-left: 50px;
+}
+
+.sidebar ul a i{
+  margin-right: 16px;
+}
+
+#check{
+  display: none;
+}
+
+label #btn,label #cancel{
+  position: absolute;
+  background:  #890F0D;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+label #btn{
+  left: 250px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .5s;
+}
+
+label #cancel{
+  z-index: 1111;
+  left: 195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar{
+  left: -250px;
+}
+
+#check:checked ~ label #btn{
+  left: 40px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#check:checked ~ label #cancel{
+  left: -195px;
+}
+
+#check:checked ~ section{
+  margin-left: 0px;
+}
+
+section{
+  background: url(bg.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+  margin-left: -250px;
+}
+
+  .container {
+    display: flex;
+  }
+
+.content {
+  background-color: #5F6F94;
+  color: white;
+  font-family: 'Lora', serif;
+  position: absolute;
+  margin-left: 450px;
+  top: 180px;
+  box-shadow: rgba(0, 0, 0, 0.398);
+  font-size: 15px;
+}
+
+.content h4 a {
+  background-color: #5F6F94;
+  color: white;
+  font-size: 15px;
+  font-family: 'Lora', serif;
+  font-size: 15px;
+  width: 165px;
+  height: 53px;
+  left: 487px;
+  top: 228px;
+}
+.wrapper {
+  background-color: #0a5275;
+}
+
+.wrapp {
+  justify-content: center;
+}
+
+h3 {
+    color: #25316D;    ;
+    margin-left: 300px;
+}
